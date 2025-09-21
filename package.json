@@ -3,8 +3,10 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node index.js",
+    "dev": "nodemon index.js"
   },
   "repository": {
     "type": "git",
@@ -13,9 +15,17 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "type": "commonjs",
   "bugs": {
     "url": "https://github.com/nortetech-admin/gmail-googleForms-automation/issues"
   },
-  "homepage": "https://github.com/nortetech-admin/gmail-googleForms-automation#readme"
+  "homepage": "https://github.com/nortetech-admin/gmail-googleForms-automation#readme",
+  "dependencies": {
+    "@google-cloud/local-auth": "^3.0.1",
+    "dotenv": "^17.2.2",
+    "googleapis": "^160.0.0",
+    "playwright": "^1.55.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10"
+  }
 }
